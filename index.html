@@ -1,1 +1,55 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS tasks</title>
+  </head>
+  <body>
+    <ul>
+      <li>Animals
+      <ul>
+        <li>Mammals
+        <ul>
+          <li>Cows</li>
+          <li>Donkeys</li>
+          <li>Dogs</li>
+          <li>Tigers</li>
+        </ul>
+      </li>
+        <li>Other
+          <ul>
+            <li>Snakes</li>
+            <li>Birds</li>
+            <li>Lizards</li>         
+          </ul>
+        </li>
+      </ul>
+    </li>
+      <li>Fishes
+      <ul>
+        <li>Aquarium
+        <ul>
+          <li>Guppy</li>
+          <li>Angelfish</li>
+        </ul>
+        <li>Sea
+        <ul>
+          <li>Sea trout</li>
+        </ul>
+        </li>
+    </ul>
+      </li>
+    </ul>
+    <script>
+      let group = document.getElementsByTagName('li');
+      for (el of group) {
+        let numOf = el.getElementsByTagName('li').length;
+        if (!numOf) continue;
+        el.firstChild.textContent += ' [' + numOf + ']';
+      }
+
+    </script>
+  </body>
+</html>
