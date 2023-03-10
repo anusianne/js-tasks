@@ -19,3 +19,9 @@
 // 	ul.append(li);
 // }
 // document.body.append(ul);
+let group = document.getElementsByTagName('li');
+for (el of group) {
+  let numOf = el.getElementsByTagName('li').length;
+  if (!numOf) continue;
+  el.firstChild.textContent += ' [' + numOf + ']';
+}
