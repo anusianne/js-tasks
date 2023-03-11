@@ -24,3 +24,7 @@ function bmi(weight, height) {
         return "Obese";
       }
     }
+
+    function numberToString(num) {
+      return num.toString();
+    }
