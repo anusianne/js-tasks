@@ -32,3 +32,7 @@ function numberToString(num) {
 function noSpace(x) {
   return x.split(' ').join('');
 }
+//delete a first and last character in string
+function removeChar(str) {
+  return str.slice(1, -1);
+}
