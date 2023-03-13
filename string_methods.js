@@ -36,3 +36,12 @@ function noSpace(x) {
 function removeChar(str) {
   return str.slice(1, -1);
 }
+//make a negative number
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+//find the fird angle of a triangle
+function otherAngle(a, b) {
+  while (a>0 && b>0)
+  return 180-(a+b);
+}
