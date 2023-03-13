@@ -45,3 +45,7 @@ function otherAngle(a, b) {
   while (a>0 && b>0)
   return 180-(a+b);
 }
+// Sum Numbers
+function sum (numbers) {
+  return numbers.reduce((a,b) => a+b, 0);
+};
